@@ -21,5 +21,23 @@ namespace LoginProgra
         {
 
         }
+
+        private void TextAceptar_Click(object sender, EventArgs e)
+        {
+            if (User.Text == "juancho")
+            {
+                if (Contra.Text == "123tamarindo")
+                    MessageBox.Show("felicidades, su cuenta de minecraft ha iniciado");
+                else
+                    MessageBox.Show("la contraseña es inncorrecta");
+            }
+            else
+                MessageBox.Show("el nombre de usuario es incorrecto");
+        }
+
+        private void TextSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
